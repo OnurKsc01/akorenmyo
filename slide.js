@@ -19,7 +19,8 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   
   // Fonksiyonu 5000 milisaniye (5 saniye) sonra tekrar çalıştır
-  setTimeout(showSlides, 1000); 
+  setTimeout(showSlides, 2500); 
 
 }
+
 
