@@ -1,0 +1,550 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    width: 1000px;
+    margin: 0% auto;
+}
+
+/* Kapsayıcı (Sayfanın ortada durması için) */
+.container {
+    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+/* --- HEADER (Sarı Bölüm) --- */
+.main-header {
+    background-color: gold; /* Okulun sarı tonuna yakın bir renk */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+main ul{
+    margin-left: 50px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #d4c05e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    color: #888;
+    margin-left: 25px;
+}
+
+.titles h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.titles h2 {
+    font-size: 18px;
+    color: #444;
+    font-weight: normal;
+}
+
+article table,td,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+article table{
+    border-collapse: collapse;
+    width: 600px;
+}
+
+
+.navbar {
+    background-color: #555; 
+    color: #fff;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    border-right: 1px solid #666;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar ul li:last-child {
+    border-right: none;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #333;
+}
+
+
+.main-content {
+    background-color: #fff;
+    padding: 30px;
+    min-height: 400px; /* İçerik az olsa bile sayfa dolu gözüksün */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border:solid black;
+    margin-bottom: 20px;
+}
+
+/* Tanıtım Bölümü (Resim ve Yazı Yan Yana) */
+.intro-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.img-placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-weight: bold;
+}
+
+.intro-text {
+    flex: 1; /* Kalan boşluğu doldurur */
+    font-size: 15px;
+}
+
+/* Vizyon Misyon */
+.vision-mission {
+    margin-top: 30px;
+}
+
+.vm-block {
+    margin-bottom: 30px;
+    background-color: #f9fdf9; /* Hafif yeşilimsi ton (2. fotodaki gibi) */
+    padding: 20px;
+    border-left: 5px solid #555;
+}
+
+.vm-block h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-placeholder-sm {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 50px
+}
+
+.footer-address {
+    max-width: 300px;
+    margin: 20px;
+}
+.footer-contact{
+    margin-right: 100px;
+}
+
+.footer-address h4, .footer-contact h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+/* Tablo Genel Yapısı */
+        .sinav-tablosu {
+            width: 100%;
+            border-collapse: collapse; /* Kenarlıkların tek çizgi olması için */
+            font-family: sans-serif;
+            color: #444; /* Metin rengi */
+        }
+
+        /* Kenarlıklar */
+        .sinav-tablosu th, .sinav-tablosu td {
+            border: 1px solid #999; /* Gri ince kenarlıklar */
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        /* Başlık Satırı */
+        .sinav-tablosu th {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* LİNKLERİ DÜZENLEME (Senin istediğin kısım) */
+        .sinav-tablosu td a {
+            text-decoration: none; /* Alt çizgiyi kaldırır */
+            color: blue;           /* Rengi mavi yapar (İstersen 'inherit' yaparak siyah yapabilirsin) */
+            display: block;        /* Tüm hücreye tıklanabilirlik sağlar */
+            text-align: center;    /* Yazıyı ortalar */
+        }
+        .ders-programi {
+            width: 100%;
+            border-collapse: collapse; /* Çizgilerin birleşmesi için */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        /* Kenarlıklar ve Hücre İçi Boşluklar */
+        .ders-programi th, .ders-programi td {
+            border: 1px solid #666; /* Görseldeki belirgin gri çizgiler */
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Başlıklar */
+        .ders-programi th {
+            font-weight: normal;
+            color: #555;
+        }
+
+        /* LİNK AYARLARI (Senin istediğin: Mavi rengi ve alt çizgiyi kaldırır) */
+        .ders-programi a {
+            text-decoration: none; /* Alt çizgiyi kaldırır */
+            color: #d4a017;        /* Görseldeki turuncu/altın rengi */
+            font-weight: bold;
+            display: block;
+            text-align: center;    /* Yazıyı ortalar */
+        }
+
+        /* Orta sütunları hizalamak için */
+        .text-center {
+            text-align: center;
+        }
+
+        .ders-listesi {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 13px; /* Küçük ve okunaklı font */
+            color: #333;
+        }
+
+        .ders-listesi th, .ders-listesi td {
+            border: 1px solid #999;
+            padding: 6px 4px;
+            text-align: left;
+        }
+
+        /* Başlık satırı stili */
+        .ders-listesi th {
+            background-color: #ffffff;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Sayısal kolonları ortalamak için */
+        .center {
+            text-align: center;
+        }
+
+        /* Satır üzerine gelince hafif renk değişimi */
+        .ders-listesi tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .staj-takvimi {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Kenarlıklar ve Hücre Boşlukları */
+        .staj-takvimi th, .staj-takvimi td {
+            border: 1px solid #666;
+            padding: 12px;
+            vertical-align: top; /* Metinlerin yukarıdan başlaması için */
+            text-align: left;
+        }
+
+        /* Başlık Satırı */
+        .staj-takvimi th {
+            background-color: #fcfcfc;
+            font-weight: bold;
+        }
+
+        /* Tarih Sütunu Genişliği */
+        .tarih-kolonu {
+            width: 25%;
+            font-weight: bold;
+        }
+
+        /* Formlar ve Listeler İçin Boşluk */
+        .form-liste {
+            margin-top: 10px;
+            display: block;
+        }
+        .staj-form-tablosu {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .staj-form-tablosu td {
+            border: 1px solid #777;
+            padding: 15px;
+            vertical-align: middle;
+        }
+
+        .no-kolonu { width: 30px; text-align: left; }
+        .baslik-kolonu { width: 25%; text-align: left; font-size: 16px; }
+
+        /* LİNK AYARLARI (Sarı renkli ve alt çizgisiz) */
+        .form-link-kolonu {
+            width: 35%;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /* Linklerin stili */
+        .form-link-kolonu a {
+            text-decoration: none; /* Alt çizgiyi kaldırır */
+            color: yellow;        /* Görseldeki sarı/altın rengini korur */
+            display: block;        /* Tüm metin alanını tıklanabilir yapar */
+            margin-bottom: 10px;
+        }
+
+        /* Mouse ile üzerine gelince hafif belirginleşmesi için */
+        .form-link-kolonu a:hover {
+            color: gold; /* Üzerine gelince rengi biraz koyulaşır */
+        }
+
+        .staj-belge-tablosu {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        /* Hücre ve Kenarlık Ayarları */
+        .staj-belge-tablosu td {
+            border: 1px solid #777;
+            padding: 20px;
+            vertical-align: middle;
+        }
+
+        /* Sütun Genişlikleri */
+        .no-kolonu {
+            width: 40px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .baslik-kolonu {
+            width: 40%;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        /* LİNK AYARLARI (Sarı renkli, alt çizgisiz ve mavi değil) */
+        .link-kolonu {
+            width: 20%;
+            text-align: center;
+            font-size: 22px; /* Word/Pdf yazıları görseldeki gibi büyük */
+        }
+
+        .link-kolonu a {
+            text-decoration: none; /* Alt çizgiyi kaldırır */
+            color: yellow;        /* Görseldeki sarı/altın rengi */
+            font-weight: normal;
+            display: block;        /* Hücrenin tamamını tıklanabilir yapar */
+        }
+
+        /* Mouse üzerine gelince hafif renk değişimi (isteğe bağlı) */
+        .link-kolonu a:hover {
+            color: yellow;
+        }
+        /* Kartın varsayılan hali (Geçiş efektini buraya ekliyoruz) */
+.personel-kart {
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    margin: 0px;
+    
+}
+/* Mouse ile üzerine gelindiğinde çalışacak kısım */
+.personel-kart:hover {
+    background-color: #f2b134; /* Arka planı sarı/altın yapar */
+    border-color: #d49a2a;     /* Kenarlığı biraz koyulaştırır */
+    cursor: pointer;           /* Mouse imlecini el işaretine çevirir */
+}
+
+/* İsteğe bağlı: Üzerine gelince yazıların rengini değiştirmek istersen */
+.personel-kart:hover .personel-isim,
+.personel-kart:hover .personel-unvan,
+.personel-kart:hover .personel-bolum {
+    color: #fff; /* Yazıları beyaz yapar, sarı üzerinde daha net görünür */
+}
+
+.dahili-tablo {
+            width: 100%;
+            border-collapse: collapse; /* Kenarlıkların birleşik görünmesi için */
+            font-family: Arial, sans-serif;
+            color: #000;
+            border: 2px solid #000;
+        }
+
+        /* Hücre ve Kenarlık Ayarları */
+        .dahili-tablo th, .dahili-tablo td {
+            border: 1px solid #000;
+            padding: 12px 15px;
+            font-size: 16px;
+        }
+
+        /* Başlık Satırı (Gri Arka Plan) */
+        .dahili-tablo thead th {
+            background-color: #d9d9d9;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Mavi Satır Rengi */
+        .satir-mavi {
+            background-color: #bdd7ee;
+        }
+
+        /* Gri Satır Rengi */
+        .satir-gri {
+            background-color: #ededed;
+        }
+
+        /* Dahili Telefon Sütununu Ortalama */
+        .text-center {
+            text-align: center;
+            vertical-align: middle;
+            font-weight: 500;
+        }
+
+        /* İsim Sütunu Sola Yaslı */
+        .text-left {
+            text-align: left;
+        }
